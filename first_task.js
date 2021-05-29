@@ -6,6 +6,7 @@ function qsort(arr, low, high) {
     }
 }
 
+
 function partition(arr, low, high){
     // Берем средний элемент
     const pivot = arr[Math.floor((high + low)/2)];
@@ -31,6 +32,7 @@ function partition(arr, low, high){
         arr[high] = temp
     }
 };
+
 
 function findAndDeleteDuplicates(arr) {
     console.log('Массив ' + arr.toString())
@@ -59,6 +61,7 @@ function findAndDeleteDuplicates(arr) {
     console.log('Дупликаты ' + duplicates.toString())
 }
 
+
 function createArray(range, size) {
     let arr = []
     for(let i=0; i<size; i++) {
@@ -66,7 +69,6 @@ function createArray(range, size) {
     }
     return arr
 }
-
 
 
 arr = createArray(10, 10)
